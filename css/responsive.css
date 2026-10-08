@@ -1,0 +1,39 @@
+@media (max-width: 1024px) {
+    .grid-4 { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+    header#navbar {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    header#navbar nav a {
+        margin: 0 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .hero h1 { font-size: 1.6rem; }
+
+    .grid-3, .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filtros {
+        flex-direction: column;
+    }
+
+    .filtros input, .filtros select {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-3, .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    h1 { font-size: 1.4rem; }
+    h2 { font-size: 1.2rem; }
+}
